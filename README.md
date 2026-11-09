@@ -49,7 +49,7 @@ go test -v ./step-03-arrays/3.2-medium/01-two-sum/  # one problem
 | 1 | [Learn the basics](step-01-basics/) | ✅ | ✅ 22 patterns + 17 problems |
 | 2 | [Sorting](step-02-sorting/) | ✅ | ✅ 7 algorithms |
 | 3 | [Arrays](step-03-arrays/) | ✅ | ✅ 39 problems (easy, medium, hard) |
-| 4 | [Binary search](step-04-binary-search/) | ✅ | ⏳ |
+| 4 | [Binary search](step-04-binary-search/) | ✅ | ✅ 32 problems (1D, on answers, 2D) |
 | 5 | [Strings (basic + medium)](step-05-strings/) | ✅ | ⏳ |
 | 6 | [Linked list](step-06-linked-list/) | ✅ | ⏳ |
 | 7 | [Recursion patterns](step-07-recursion/) | ✅ | ⏳ |
