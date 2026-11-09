@@ -332,11 +332,11 @@ func Pattern19(n int) string {
 
 // Pattern20: symmetric butterfly.
 //
-//	*    *
-//	**  **
-//	******
-//	**  **
-//	*    *
+//   - *
+//     **  **
+//     ******
+//     **  **
+//   - *
 func Pattern20(n int) string {
 	var b builder
 	for i := 1; i <= 2*n-1; i++ {
