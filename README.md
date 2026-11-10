@@ -58,7 +58,7 @@ go test -v ./step-03-arrays/3.2-medium/01-two-sum/  # one problem
 | 10 | [Sliding window and two pointers](step-10-sliding-window-two-pointers/) | ✅ | ✅ 12 problems |
 | 11 | [Heaps](step-11-heaps/) | ✅ | ✅ 17 problems |
 | 12 | [Greedy](step-12-greedy/) | ✅ | ✅ 16 problems |
-| 13 | [Binary trees](step-13-binary-trees/) | ✅ | ✅ traversals + 12 medium · ⏳ hard |
+| 13 | [Binary trees](step-13-binary-trees/) | ✅ | ✅ 10 traversals + 25 problems |
 | 14 | [Binary search trees](step-14-bst/) | ✅ | ⏳ |
 | 15 | [Graphs](step-15-graphs/) | ✅ | ⏳ |
 | 16 | [Dynamic programming](step-16-dynamic-programming/) | ✅ | ⏳ |

@@ -1,6 +1,6 @@
 # Step 13: Binary Trees
 
-> Status: ✅ traversals and medium done · ⏳ hard problems coming in the next batch
+> Status: ✅ theory and all problems done
 
 Shared helpers live in [`tree/`](tree/): `tree.FromLevel([]int{1, 2, 3, tree.Null, 4})` builds a tree from LeetCode-style level order.
 
@@ -92,18 +92,18 @@ Many "hard" problems (diameter, max path sum, balanced check) are the height fun
 | 12 | [Symmetric tree](13.2-medium/12-symmetric-tree/) | mirror with crossed children |
 
 ### 13.3 Hard
-| # | Problem | Status |
+| # | Problem | Key idea |
 |---|---|---|
-| 1 | Root to node path | ⏳ |
-| 2 | Lowest common ancestor | ⏳ |
-| 3 | Maximum width | ⏳ |
-| 4 | Children sum property | ⏳ |
-| 5 | All nodes at distance K | ⏳ |
-| 6 | Minimum time to burn the tree | ⏳ |
-| 7 | Count nodes in a complete tree | ⏳ |
-| 8 | Build tree from preorder + inorder | ⏳ |
-| 9 | Build tree from postorder + inorder | ⏳ |
-| 10 | Serialise and deserialise | ⏳ |
-| 11 | Morris inorder traversal | ⏳ |
-| 12 | Morris preorder traversal | ⏳ |
-| 13 | Flatten binary tree to linked list | ⏳ |
+| 1 | [Root to node path](13.3-hard/01-root-to-node-path/) | DFS + backtrack |
+| 2 | [Lowest common ancestor](13.3-hard/02-lowest-common-ancestor/) | return node where p and q split |
+| 3 | [Maximum width](13.3-hard/03-maximum-width/) | heap indexes per level, normalised |
+| 4 | [Children sum property](13.3-hard/04-children-sum-property/) | push down, then pull up |
+| 5 | [All nodes at distance K](13.3-hard/05-nodes-at-distance-k/) | parent map + BFS |
+| 6 | [Minimum time to burn the tree](13.3-hard/06-burn-tree/) | parent map + BFS levels |
+| 7 | [Count nodes in a complete tree](13.3-hard/07-count-complete-tree-nodes/) | perfect subtree = 2^h − 1 |
+| 8 | [Build from preorder + inorder](13.3-hard/08-build-from-preorder-inorder/) | root first, split by inorder index |
+| 9 | [Build from postorder + inorder](13.3-hard/09-build-from-postorder-inorder/) | root last |
+| 10 | [Serialise and deserialise](13.3-hard/10-serialize-deserialize/) | level order with # |
+| 11 | [Morris inorder](13.3-hard/11-morris-inorder/) | threads to predecessor, O(1) space |
+| 12 | [Morris preorder](13.3-hard/12-morris-preorder/) | visit when creating the thread |
+| 13 | [Flatten to linked list](13.3-hard/13-flatten-to-linked-list/) | move left subtree to the right |
