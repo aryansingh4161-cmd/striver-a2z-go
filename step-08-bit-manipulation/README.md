@@ -1,6 +1,6 @@
 # Step 8: Bit Manipulation (+ maths)
 
-> Status: theory ready, problems coming ⏳
+> Status: ✅ theory and all 19 problems done
 
 ## Binary basics
 - 13 in binary = `1101` = 8 + 4 + 0 + 1.
@@ -54,32 +54,32 @@ Numbers `0 .. 2ⁿ−1` are all the on/off patterns of n items. Bit `i` set → 
 ## Problems
 
 ### 8.1 Learn
-| # | Problem | Status |
+| # | Problem | Key idea |
 |---|---|---|
-| 1 | Decimal ↔ binary, operators | ⏳ |
-| 2 | Check if the i-th bit is set | ⏳ |
-| 3 | Check odd or even | ⏳ |
-| 4 | Check power of 2 | ⏳ |
-| 5 | Count set bits | ⏳ |
-| 6 | Set / unset the rightmost bit | ⏳ |
-| 7 | Swap two numbers | ⏳ |
-| 8 | Divide two integers without `*`, `/` | ⏳ |
+| 1 | [Decimal ↔ binary](8.1-learn/01-binary-conversion/) | divide by 2 / value*2 + bit |
+| 2 | [Check / set / clear / toggle the i-th bit](8.1-learn/02-check-ith-bit/) | masks with 1 << i |
+| 3 | [Odd or even](8.1-learn/03-odd-even/) | n & 1 |
+| 4 | [Power of 2](8.1-learn/04-power-of-two/) | n & (n−1) == 0 |
+| 5 | [Count set bits](8.1-learn/05-count-set-bits/) | Kernighan: n &= n−1 |
+| 6 | [Set / unset the rightmost bit](8.1-learn/06-set-unset-rightmost-bit/) | n | (n+1), n & (n−1), n & −n |
+| 7 | [Swap two numbers](8.1-learn/07-swap-numbers/) | XOR swap |
+| 8 | [Divide without * / %](8.1-learn/08-divide-integers/) | subtract biggest divisor << k |
 
 ### 8.2 Interview problems
-| # | Problem | Status |
+| # | Problem | Key idea |
 |---|---|---|
-| 1 | Minimum bit flips to convert A to B | ⏳ |
-| 2 | Single number (others appear twice) | ⏳ |
-| 3 | Single number II (others appear thrice) | ⏳ |
-| 4 | Power set using bits | ⏳ |
-| 5 | XOR of numbers in range L..R | ⏳ |
-| 6 | Two numbers that appear once (others twice) | ⏳ |
+| 1 | [Minimum bit flips A → B](8.2-interview/01-min-bit-flips/) | popcount(a ^ b) |
+| 2 | [Single number (others twice)](8.2-interview/02-single-number/) | XOR all |
+| 3 | [Single number II (others thrice)](8.2-interview/03-single-number-ii/) | bit counts mod 3 / ones-twos |
+| 4 | [Power set with bits](8.2-interview/04-power-set-bits/) | mask 0 .. 2ⁿ−1 |
+| 5 | [XOR of L..R](8.2-interview/05-xor-range/) | n % 4 pattern |
+| 6 | [Two numbers appearing once](8.2-interview/06-two-single-numbers/) | split by lowest differing bit |
 
 ### 8.3 Advanced maths
-| # | Problem | Status |
+| # | Problem | Key idea |
 |---|---|---|
-| 1 | Prime factors of a number | ⏳ |
-| 2 | All divisors (√n) | ⏳ |
-| 3 | Sieve of Eratosthenes | ⏳ |
-| 4 | Prime factorisation with SPF sieve | ⏳ |
-| 5 | Pow(x, n) with binary exponentiation | ⏳ |
+| 1 | [Prime factors](8.3-maths/01-prime-factors/) | divide out up to √n |
+| 2 | [All divisors](8.3-maths/02-all-divisors/) | pairs up to √n |
+| 3 | [Sieve of Eratosthenes](8.3-maths/03-sieve/) | cross out from p² |
+| 4 | [Factorisation with SPF sieve](8.3-maths/04-spf-factorisation/) | divide by spf[x] repeatedly |
+| 5 | [Pow(x, n) / modular power](8.3-maths/05-pow-binary-exp/) | square and multiply on bits |
