@@ -54,7 +54,7 @@ go test -v ./step-03-arrays/3.2-medium/01-two-sum/  # one problem
 | 6 | [Linked list](step-06-linked-list/) | ✅ | ✅ basics + 21 problems |
 | 7 | [Recursion patterns](step-07-recursion/) | ✅ | ✅ 23 problems |
 | 8 | [Bit manipulation](step-08-bit-manipulation/) | ✅ | ✅ 19 problems |
-| 9 | [Stack and queue](step-09-stack-queue/) | ✅ | ⏳ |
+| 9 | [Stack and queue](step-09-stack-queue/) | ✅ | ✅ 30 problems |
 | 10 | [Sliding window and two pointers](step-10-sliding-window-two-pointers/) | ✅ | ⏳ |
 | 11 | [Heaps](step-11-heaps/) | ✅ | ⏳ |
 | 12 | [Greedy](step-12-greedy/) | ✅ | ⏳ |
