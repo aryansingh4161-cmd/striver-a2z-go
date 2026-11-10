@@ -1,6 +1,6 @@
 # Step 15: Graphs
 
-> Status: theory ready, problems coming ⏳
+> Status: theory, 15.1 – 15.3 done (23 problems); shortest paths, MST and SCC coming ⏳
 
 ## Words to know
 - **Vertex (node)** and **edge** (connection).
@@ -61,39 +61,39 @@ Always keep a `visited` array, or you'll loop forever on cycles. For disconnecte
 ## Problems
 
 ### 15.1 Learning
-| # | Problem | Status |
+| # | Problem | Key idea |
 |---|---|---|
-| 1 | Graph representation | ⏳ |
-| 2 | Connected components | ⏳ |
-| 3 | BFS traversal | ⏳ |
-| 4 | DFS traversal | ⏳ |
+| 1 | [Graph representation](15.1-learning/01-graph-representation/) | adjacency list vs matrix |
+| 2 | [Connected components](15.1-learning/02-connected-components/) | start a traversal from each unvisited node |
+| 3 | [BFS traversal](15.1-learning/03-bfs/) | queue, mark visited when pushing |
+| 4 | [DFS traversal](15.1-learning/04-dfs/) | recursion, go deep first |
 
 ### 15.2 BFS / DFS problems
-| # | Problem | Status |
+| # | Problem | Key idea |
 |---|---|---|
-| 1 | Number of provinces | ⏳ |
-| 2 | Number of islands | ⏳ |
-| 3 | Flood fill | ⏳ |
-| 4 | Rotting oranges | ⏳ |
-| 5 | Detect cycle in undirected graph (BFS / DFS) | ⏳ |
-| 6 | 0/1 matrix (distance to nearest 0) | ⏳ |
-| 7 | Surrounded regions | ⏳ |
-| 8 | Number of enclaves | ⏳ |
-| 9 | Word ladder I | ⏳ |
-| 10 | Word ladder II | ⏳ |
-| 11 | Number of distinct islands | ⏳ |
-| 12 | Bipartite graph | ⏳ |
-| 13 | Detect cycle in directed graph (DFS) | ⏳ |
+| 1 | [Number of provinces](15.2-bfs-dfs/01-number-of-provinces/) | count DFS starts |
+| 2 | [Number of islands](15.2-bfs-dfs/02-number-of-islands/) | grid DFS, 8 directions |
+| 3 | [Flood fill](15.2-bfs-dfs/03-flood-fill/) | DFS from start, recolour same-colour cells |
+| 4 | [Rotting oranges](15.2-bfs-dfs/04-rotting-oranges/) | multi-source BFS, count levels |
+| 5 | [Detect cycle in undirected graph (BFS / DFS)](15.2-bfs-dfs/05-cycle-undirected/) | visited neighbour that isn't the parent |
+| 6 | [0/1 matrix (distance to nearest 0)](15.2-bfs-dfs/06-distance-nearest-zero/) | multi-source BFS from all zeros |
+| 7 | [Surrounded regions](15.2-bfs-dfs/07-surrounded-regions/) | DFS from border O's, flip the rest |
+| 8 | [Number of enclaves](15.2-bfs-dfs/08-number-of-enclaves/) | remove land touching the border |
+| 9 | [Word ladder I](15.2-bfs-dfs/09-word-ladder/) | BFS, change one letter at a time |
+| 10 | [Word ladder II](15.2-bfs-dfs/10-word-ladder-ii/) | BFS levels + backtrack parents |
+| 11 | [Number of distinct islands](15.2-bfs-dfs/11-distinct-islands/) | shape = offsets from the first cell |
+| 12 | [Bipartite graph](15.2-bfs-dfs/12-bipartite-graph/) | 2-colour, neighbour same colour = fail |
+| 13 | [Detect cycle in directed graph (DFS)](15.2-bfs-dfs/13-cycle-directed-dfs/) | onPath array (back edge) |
 
 ### 15.3 Topological sort
-| # | Problem | Status |
+| # | Problem | Key idea |
 |---|---|---|
-| 1 | Topological sort (DFS) | ⏳ |
-| 2 | Kahn's algorithm (BFS) | ⏳ |
-| 3 | Cycle detection in directed graph (BFS) | ⏳ |
-| 4 | Course schedule I and II | ⏳ |
-| 5 | Find eventual safe states | ⏳ |
-| 6 | Alien dictionary | ⏳ |
+| 1 | [Topological sort (DFS)](15.3-topo-sort/01-topo-sort-dfs/) | push after children, reverse |
+| 2 | [Kahn's algorithm (BFS)](15.3-topo-sort/02-kahns-algorithm/) | pop in-degree 0 nodes |
+| 3 | [Cycle detection in directed graph (BFS)](15.3-topo-sort/03-cycle-directed-bfs/) | Kahn's processed < V |
+| 4 | [Course schedule I and II](15.3-topo-sort/04-course-schedule/) | edge b → a, then Kahn's |
+| 5 | [Find eventual safe states](15.3-topo-sort/05-eventual-safe-states/) | reverse graph + Kahn's |
+| 6 | [Alien dictionary](15.3-topo-sort/06-alien-dictionary/) | first differing letter = edge, topo sort |
 
 ### 15.4 Shortest paths
 | # | Problem | Status |
