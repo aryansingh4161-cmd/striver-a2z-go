@@ -1,6 +1,6 @@
 # Step 12: Greedy Algorithms
 
-> Status: theory ready, problems coming ⏳
+> Status: ✅ theory and all 16 problems done
 
 ## The idea
 At each step, take the choice that looks **best right now**, and never undo it.
@@ -27,25 +27,25 @@ Most greedy solutions start with a **sort**: O(n log n).
 ## Problems
 
 ### 12.1 Easy
-| # | Problem | Status |
+| # | Problem | Key idea |
 |---|---|---|
-| 1 | Assign cookies | ⏳ |
-| 2 | Fractional knapsack | ⏳ |
-| 3 | Minimum coins (Indian currency) | ⏳ |
-| 4 | Lemonade change | ⏳ |
-| 5 | Valid parenthesis string (with `*`) | ⏳ |
+| 1 | [Assign cookies](12.1-easy/01-assign-cookies/) | smallest cookie that fits the least greedy child |
+| 2 | [Fractional knapsack](12.1-easy/02-fractional-knapsack/) | best value/weight first |
+| 3 | [Minimum coins (Indian currency)](12.1-easy/03-minimum-coins/) | largest note first (fails for general coins) |
+| 4 | [Lemonade change](12.1-easy/04-lemonade-change/) | give 10+5 before 5+5+5 |
+| 5 | [Valid parenthesis string with *](12.1-easy/05-valid-parenthesis-string/) | track [lo, hi] open count |
 
 ### 12.2 Medium / hard
-| # | Problem | Status |
+| # | Problem | Key idea |
 |---|---|---|
-| 1 | N meetings in one room | ⏳ |
-| 2 | Jump game | ⏳ |
-| 3 | Jump game II | ⏳ |
-| 4 | Minimum number of platforms | ⏳ |
-| 5 | Job sequencing | ⏳ |
-| 6 | Candy | ⏳ |
-| 7 | Shortest job first (SJF) scheduling | ⏳ |
-| 8 | LRU page faults | ⏳ |
-| 9 | Insert interval | ⏳ |
-| 10 | Merge intervals | ⏳ |
-| 11 | Non-overlapping intervals | ⏳ |
+| 1 | [N meetings in one room](12.2-medium-hard/01-n-meetings/) | earliest end first |
+| 2 | [Jump game](12.2-medium-hard/02-jump-game/) | farthest reachable |
+| 3 | [Jump game II](12.2-medium-hard/03-jump-game-ii/) | BFS levels of reach |
+| 4 | [Minimum platforms](12.2-medium-hard/04-minimum-platforms/) | sort arrivals and departures, sweep |
+| 5 | [Job sequencing](12.2-medium-hard/05-job-sequencing/) | highest profit, latest free slot |
+| 6 | [Candy](12.2-medium-hard/06-candy/) | left pass + right pass |
+| 7 | [Shortest job first](12.2-medium-hard/07-shortest-job-first/) | sort burst times |
+| 8 | [LRU page faults](12.2-medium-hard/08-lru-page-faults/) | evict least recently used |
+| 9 | [Insert interval](12.2-medium-hard/09-insert-interval/) | before / merge / after |
+| 10 | [Merge intervals](12.2-medium-hard/10-merge-intervals/) | sort by start, extend |
+| 11 | [Non-overlapping intervals](12.2-medium-hard/11-non-overlapping-intervals/) | n − max kept (sort by end) |
