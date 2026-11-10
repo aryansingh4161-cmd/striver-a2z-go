@@ -1,6 +1,6 @@
 # Step 16: Dynamic Programming
 
-> Status: theory, 16.1 and 16.2 done (12 problems); more coming ⏳
+> Status: theory, 16.1 – 16.3 done (23 problems); more coming ⏳
 
 ## What DP is
 Recursion where the **same subproblems repeat**, so you **store answers and reuse them**.
@@ -76,19 +76,19 @@ func waysOpt(n int) int {
 | 7 | [Cherry pickup II (3D DP)](16.2-grids/07-cherry-pickup-ii/) | state (row, colA, colB), 9 moves |
 
 ### 16.3 Subsequences
-| # | Problem | Status |
+| # | Problem | Key idea |
 |---|---|---|
-| 1 | Subset sum equal to target | ⏳ |
-| 2 | Partition equal subset sum | ⏳ |
-| 3 | Partition with minimum absolute difference | ⏳ |
-| 4 | Count subsets with sum K | ⏳ |
-| 5 | Count partitions with given difference | ⏳ |
-| 6 | 0/1 knapsack | ⏳ |
-| 7 | Minimum coins | ⏳ |
-| 8 | Target sum | ⏳ |
-| 9 | Coin change II | ⏳ |
-| 10 | Unbounded knapsack | ⏳ |
-| 11 | Rod cutting | ⏳ |
+| 1 | [Subset sum equal to target](16.3-subsequences/01-subset-sum/) | take / not take, boolean table |
+| 2 | [Partition equal subset sum](16.3-subsequences/02-partition-equal-subset-sum/) | subset sum of total / 2 |
+| 3 | [Partition with minimum absolute difference](16.3-subsequences/03-partition-min-difference/) | last row of subset sum table |
+| 4 | [Count subsets with sum K](16.3-subsequences/04-count-subsets-sum-k/) | take + not take counts (zeros!) |
+| 5 | [Count partitions with given difference](16.3-subsequences/05-count-partitions-difference/) | count subsets with (total − d) / 2 |
+| 6 | [0/1 knapsack](16.3-subsequences/06-knapsack-01/) | f(i, W) = max(skip, val + f(i−1, W − wt)) |
+| 7 | [Minimum coins](16.3-subsequences/07-minimum-coins/) | unbounded: stay on index after taking |
+| 8 | [Target sum](16.3-subsequences/08-target-sum/) | same as count partitions with difference |
+| 9 | [Coin change II](16.3-subsequences/09-coin-change-ii/) | count ways, unbounded |
+| 10 | [Unbounded knapsack](16.3-subsequences/10-unbounded-knapsack/) | take and stay |
+| 11 | [Rod cutting](16.3-subsequences/11-rod-cutting/) | unbounded knapsack on lengths |
 
 ### 16.4 Strings
 | # | Problem | Status |
