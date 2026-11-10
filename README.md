@@ -61,7 +61,7 @@ go test -v ./step-03-arrays/3.2-medium/01-two-sum/  # one problem
 | 13 | [Binary trees](step-13-binary-trees/) | ✅ | ✅ 10 traversals + 25 problems |
 | 14 | [Binary search trees](step-14-bst/) | ✅ | ✅ 15 problems |
 | 15 | [Graphs](step-15-graphs/) | ✅ | ✅ 4 basics + 43 problems |
-| 16 | [Dynamic programming](step-16-dynamic-programming/) | ✅ | ⏳ |
+| 16 | [Dynamic programming](step-16-dynamic-programming/) | ✅ | ✅ 54 problems |
 | 17 | [Tries](step-17-tries/) | ✅ | ⏳ |
 | 18 | [Strings (advanced)](step-18-strings-advanced/) | ✅ | ⏳ |
 

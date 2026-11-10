@@ -1,6 +1,6 @@
 # Step 16: Dynamic Programming
 
-> Status: theory, 16.1 – 16.5 done (39 problems); more coming ⏳
+> Status: ✅ theory and all 54 problems done
 
 ## What DP is
 Recursion where the **same subproblems repeat**, so you **store answers and reuse them**.
@@ -115,28 +115,28 @@ func waysOpt(n int) int {
 | 6 | [With transaction fee](16.5-stocks/06-stock-fee/) | pay the fee when selling |
 
 ### 16.6 Longest increasing subsequence
-| # | Problem | Status |
+| # | Problem | Key idea |
 |---|---|---|
-| 1 | LIS | ⏳ |
-| 2 | Print LIS | ⏳ |
-| 3 | LIS with binary search | ⏳ |
-| 4 | Largest divisible subset | ⏳ |
-| 5 | Longest string chain | ⏳ |
-| 6 | Longest bitonic subsequence | ⏳ |
-| 7 | Number of LIS | ⏳ |
+| 1 | [LIS](16.6-lis/01-lis/) | f(i, prev) or dp[i] over j < i |
+| 2 | [Print LIS](16.6-lis/02-print-lis/) | dp + parent array |
+| 3 | [LIS with binary search](16.6-lis/03-lis-binary-search/) | tails array, lower bound |
+| 4 | [Largest divisible subset](16.6-lis/04-largest-divisible-subset/) | sort, then LIS with divisibility |
+| 5 | [Longest string chain](16.6-lis/05-longest-string-chain/) | sort by length, LIS with "one letter added" |
+| 6 | [Longest bitonic subsequence](16.6-lis/06-longest-bitonic-subsequence/) | LIS left + LIS right − 1 |
+| 7 | [Number of LIS](16.6-lis/07-number-of-lis/) | dp length + count |
 
 ### 16.7 Partition DP (MCM)
-| # | Problem | Status |
+| # | Problem | Key idea |
 |---|---|---|
-| 1 | Matrix chain multiplication | ⏳ |
-| 2 | Minimum cost to cut a stick | ⏳ |
-| 3 | Burst balloons | ⏳ |
-| 4 | Evaluate boolean expression to true | ⏳ |
-| 5 | Palindrome partitioning II | ⏳ |
-| 6 | Partition array for maximum sum | ⏳ |
+| 1 | [Matrix chain multiplication](16.7-partition-dp/01-matrix-chain-multiplication/) | f(i, j) = min over split k |
+| 2 | [Minimum cost to cut a stick](16.7-partition-dp/02-min-cost-cut-stick/) | sort cuts, add ends, MCM |
+| 3 | [Burst balloons](16.7-partition-dp/03-burst-balloons/) | choose the LAST balloon in (i, j) |
+| 4 | [Evaluate boolean expression to true](16.7-partition-dp/04-boolean-evaluation/) | count (true, false) ways per range |
+| 5 | [Palindrome partitioning II](16.7-partition-dp/05-palindrome-partitioning-ii/) | front partition: f(i) = 1 + min f(j+1) |
+| 6 | [Partition array for maximum sum](16.7-partition-dp/06-partition-array-max-sum/) | last block of length ≤ k |
 
 ### 16.8 DP on squares
-| # | Problem | Status |
+| # | Problem | Key idea |
 |---|---|---|
-| 1 | Maximal rectangle of 1s | ⏳ |
-| 2 | Count square submatrices of 1s | ⏳ |
+| 1 | [Maximal rectangle of 1s](16.8-squares/01-maximal-rectangle/) | histogram per row + largest rectangle |
+| 2 | [Count square submatrices of 1s](16.8-squares/02-count-squares/) | 1 + min(up, left, diag) |
