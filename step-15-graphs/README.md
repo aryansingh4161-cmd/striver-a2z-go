@@ -1,6 +1,6 @@
 # Step 15: Graphs
 
-> Status: theory, 15.1 – 15.3 done (23 problems); shortest paths, MST and SCC coming ⏳
+> Status: ✅ theory and all 54 problems done
 
 ## Words to know
 - **Vertex (node)** and **edge** (connection).
@@ -96,37 +96,37 @@ Always keep a `visited` array, or you'll loop forever on cycles. For disconnecte
 | 6 | [Alien dictionary](15.3-topo-sort/06-alien-dictionary/) | first differing letter = edge, topo sort |
 
 ### 15.4 Shortest paths
-| # | Problem | Status |
+| # | Problem | Key idea |
 |---|---|---|
-| 1 | Shortest path, unit weights | ⏳ |
-| 2 | Shortest path in a DAG | ⏳ |
-| 3 | Dijkstra's algorithm | ⏳ |
-| 4 | Shortest path in a binary maze | ⏳ |
-| 5 | Path with minimum effort | ⏳ |
-| 6 | Cheapest flights within K stops | ⏳ |
-| 7 | Network delay time | ⏳ |
-| 8 | Number of ways to arrive at destination | ⏳ |
-| 9 | Minimum multiplications to reach end | ⏳ |
-| 10 | Bellman-Ford | ⏳ |
-| 11 | Floyd-Warshall | ⏳ |
-| 12 | City with the smallest number of neighbours | ⏳ |
+| 1 | [Shortest path, unit weights](15.4-shortest-paths/01-shortest-path-unit-weights/) | plain BFS |
+| 2 | [Shortest path in a DAG](15.4-shortest-paths/02-shortest-path-dag/) | relax edges in topo order |
+| 3 | [Dijkstra's algorithm](15.4-shortest-paths/03-dijkstra/) | min-heap, skip stale entries |
+| 4 | [Shortest path in a binary maze](15.4-shortest-paths/04-binary-maze/) | grid BFS |
+| 5 | [Path with minimum effort](15.4-shortest-paths/05-path-minimum-effort/) | Dijkstra with max instead of + |
+| 6 | [Cheapest flights within K stops](15.4-shortest-paths/06-cheapest-flights-k-stops/) | BFS by stops / k+1 Bellman-Ford rounds |
+| 7 | [Network delay time](15.4-shortest-paths/07-network-delay-time/) | max of Dijkstra distances |
+| 8 | [Number of ways to arrive at destination](15.4-shortest-paths/08-number-of-ways/) | Dijkstra + ways array |
+| 9 | [Minimum multiplications to reach end](15.4-shortest-paths/09-minimum-multiplications/) | BFS over values mod 100000 |
+| 10 | [Bellman-Ford](15.4-shortest-paths/10-bellman-ford/) | relax all edges V−1 times; round V finds negative cycles |
+| 11 | [Floyd-Warshall](15.4-shortest-paths/11-floyd-warshall/) | via node k in the outer loop |
+| 12 | [City with the smallest number of neighbours](15.4-shortest-paths/12-city-smallest-neighbours/) | Floyd-Warshall, then count |
 
 ### 15.5 MST and Disjoint Set
-| # | Problem | Status |
+| # | Problem | Key idea |
 |---|---|---|
-| 1 | Prim's algorithm | ⏳ |
-| 2 | Disjoint Set (union by rank/size, path compression) | ⏳ |
-| 3 | Kruskal's algorithm | ⏳ |
-| 4 | Operations to make network connected | ⏳ |
-| 5 | Most stones removed | ⏳ |
-| 6 | Accounts merge | ⏳ |
-| 7 | Number of islands II | ⏳ |
-| 8 | Making a large island | ⏳ |
-| 9 | Swim in rising water | ⏳ |
+| 1 | [Prim's algorithm](15.5-mst-dsu/01-prims-algorithm/) | grow one tree with a min-heap |
+| 2 | [Disjoint Set (union by rank/size, path compression)](15.5-mst-dsu/02-disjoint-set/) | parent array, ~O(1) per op |
+| 3 | [Kruskal's algorithm](15.5-mst-dsu/03-kruskals-algorithm/) | sort edges, DSU skips cycles |
+| 4 | [Operations to make network connected](15.5-mst-dsu/04-make-network-connected/) | components − 1 (if enough cables) |
+| 5 | [Most stones removed](15.5-mst-dsu/05-most-stones-removed/) | rows + columns as DSU nodes |
+| 6 | [Accounts merge](15.5-mst-dsu/06-accounts-merge/) | union accounts sharing an email |
+| 7 | [Number of islands II](15.5-mst-dsu/07-number-of-islands-ii/) | add a cell, union with land neighbours |
+| 8 | [Making a large island](15.5-mst-dsu/08-making-large-island/) | sizes of distinct neighbour groups + 1 |
+| 9 | [Swim in rising water](15.5-mst-dsu/09-swim-in-rising-water/) | open cells by height until start ~ end |
 
 ### 15.6 Other algorithms
-| # | Problem | Status |
+| # | Problem | Key idea |
 |---|---|---|
-| 1 | Bridges in a graph (Tarjan) | ⏳ |
-| 2 | Articulation points | ⏳ |
-| 3 | Kosaraju's algorithm (SCC) | ⏳ |
+| 1 | [Bridges in a graph (Tarjan)](15.6-other-algorithms/01-bridges/) | low[v] > tin[u] |
+| 2 | [Articulation points](15.6-other-algorithms/02-articulation-points/) | low[v] >= tin[u]; root needs ≥ 2 children |
+| 3 | [Kosaraju's algorithm (SCC)](15.6-other-algorithms/03-kosaraju-scc/) | finish order, reverse, DFS again |
