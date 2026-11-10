@@ -62,10 +62,10 @@ go test -v ./step-03-arrays/3.2-medium/01-two-sum/  # one problem
 | 14 | [Binary search trees](step-14-bst/) | ✅ | ✅ 15 problems |
 | 15 | [Graphs](step-15-graphs/) | ✅ | ✅ 4 basics + 43 problems |
 | 16 | [Dynamic programming](step-16-dynamic-programming/) | ✅ | ✅ 54 problems |
-| 17 | [Tries](step-17-tries/) | ✅ | ⏳ |
-| 18 | [Strings (advanced)](step-18-strings-advanced/) | ✅ | ⏳ |
+| 17 | [Tries](step-17-tries/) | ✅ | ✅ 6 problems |
+| 18 | [Strings (advanced)](step-18-strings-advanced/) | ✅ | ✅ 6 problems |
 
-✅ done · ⏳ coming in the next batches
+All 18 steps are complete ✅. Every folder has notes, Go code with all approaches, and passing tests.
 
 ## What every problem page contains
 

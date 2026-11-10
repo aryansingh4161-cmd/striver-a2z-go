@@ -1,6 +1,6 @@
 # Step 18: Strings (Advanced): Pattern Matching
 
-> Status: theory ready, problems coming ⏳
+> Status: ✅ theory and all 6 problems done
 
 **Problem:** find a pattern `p` (length m) in a text `s` (length n). Naive checking at every position is **O(n·m)**. These algorithms do it in **O(n + m)**.
 
@@ -37,11 +37,12 @@ func buildLPS(p string) []int {
 ```
 
 ## Problems
-| # | Problem | Status |
+
+| # | Problem | Key idea |
 |---|---|---|
-| 1 | Rabin-Karp: find all occurrences | ⏳ |
-| 2 | Z-function | ⏳ |
-| 3 | KMP / LPS array | ⏳ |
-| 4 | Shortest palindrome (add characters in front) | ⏳ |
-| 5 | Longest happy prefix | ⏳ |
-| 6 | Count and say | ⏳ |
+| 1 | [Rabin-Karp: find all occurrences](01-rabin-karp/) | rolling hash, verify on match |
+| 2 | [Z-function](02-z-function/) | Z-box reuse, search on p + "$" + s |
+| 3 | [KMP / LPS array](03-kmp-lps/) | fall back with lps, never move back in s |
+| 4 | [Shortest palindrome (add characters in front)](04-shortest-palindrome/) | LPS of s + "#" + reverse(s) |
+| 5 | [Longest happy prefix](05-longest-happy-prefix/) | last value of LPS |
+| 6 | [Count and say](06-count-and-say/) | run-length encode n − 1 times |

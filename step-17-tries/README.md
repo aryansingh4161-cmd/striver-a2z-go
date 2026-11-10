@@ -1,6 +1,6 @@
 # Step 17: Tries
 
-> Status: theory ready, problems coming ⏳
+> Status: ✅ theory and all 6 problems done
 
 ## What it is
 A tree for storing strings where each edge is a character. Words that share a prefix share the path.
@@ -50,11 +50,12 @@ func (n *Node) Insert(w string) {
 - **Maximum XOR:** a trie over **bits** (2 children: 0 and 1). For each number, greedily walk towards the opposite bit to maximise XOR.
 
 ## Problems
-| # | Problem | Status |
+
+| # | Problem | Key idea |
 |---|---|---|
-| 1 | Implement trie (insert, search, startsWith) | ⏳ |
-| 2 | Trie II (count words equal to / starting with, erase) | ⏳ |
-| 3 | Longest word with all prefixes present | ⏳ |
-| 4 | Number of distinct substrings | ⏳ |
-| 5 | Maximum XOR of two numbers in an array | ⏳ |
-| 6 | Maximum XOR with an element from an array (queries) | ⏳ |
+| 1 | [Implement trie (insert, search, startsWith)](01-implement-trie/) | 26 children + end flag |
+| 2 | [Trie II (count words equal to / starting with, erase)](02-trie-ii/) | endCnt and preCnt in every node |
+| 3 | [Longest word with all prefixes present](03-longest-complete-string/) | every node on the path must end a word |
+| 4 | [Number of distinct substrings](04-distinct-substrings/) | insert all suffixes, count new nodes |
+| 5 | [Maximum XOR of two numbers in an array](05-maximum-xor/) | bit trie, go for the opposite bit |
+| 6 | [Maximum XOR with an element from an array (queries)](06-maximum-xor-queries/) | offline: sort queries by limit, grow the trie |
