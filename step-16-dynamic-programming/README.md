@@ -1,6 +1,6 @@
 # Step 16: Dynamic Programming
 
-> Status: theory, 16.1 – 16.3 done (23 problems); more coming ⏳
+> Status: theory, 16.1 – 16.5 done (39 problems); more coming ⏳
 
 ## What DP is
 Recursion where the **same subproblems repeat**, so you **store answers and reuse them**.
@@ -91,28 +91,28 @@ func waysOpt(n int) int {
 | 11 | [Rod cutting](16.3-subsequences/11-rod-cutting/) | unbounded knapsack on lengths |
 
 ### 16.4 Strings
-| # | Problem | Status |
+| # | Problem | Key idea |
 |---|---|---|
-| 1 | Longest common subsequence | ⏳ |
-| 2 | Print LCS | ⏳ |
-| 3 | Longest common substring | ⏳ |
-| 4 | Longest palindromic subsequence | ⏳ |
-| 5 | Minimum insertions to make a palindrome | ⏳ |
-| 6 | Minimum insertions/deletions to convert A to B | ⏳ |
-| 7 | Shortest common supersequence | ⏳ |
-| 8 | Distinct subsequences | ⏳ |
-| 9 | Edit distance | ⏳ |
-| 10 | Wildcard matching | ⏳ |
+| 1 | [Longest common subsequence](16.4-strings/01-lcs/) | match → 1 + diag, else max(up, left) |
+| 2 | [Print LCS](16.4-strings/02-print-lcs/) | walk the table back from (n, m) |
+| 3 | [Longest common substring](16.4-strings/03-longest-common-substring/) | match → 1 + diag, else 0 |
+| 4 | [Longest palindromic subsequence](16.4-strings/04-longest-palindromic-subsequence/) | LCS(s, reverse(s)) |
+| 5 | [Minimum insertions to make a palindrome](16.4-strings/05-min-insertions-palindrome/) | n − LPS |
+| 6 | [Minimum insertions/deletions to convert A to B](16.4-strings/06-min-insert-delete/) | n + m − 2·LCS |
+| 7 | [Shortest common supersequence](16.4-strings/07-shortest-common-supersequence/) | n + m − LCS, build from the table |
+| 8 | [Distinct subsequences](16.4-strings/08-distinct-subsequences/) | match → use + skip |
+| 9 | [Edit distance](16.4-strings/09-edit-distance/) | insert / delete / replace |
+| 10 | [Wildcard matching](16.4-strings/10-wildcard-matching/) | * = empty or eat one char |
 
 ### 16.5 Stocks
-| # | Problem | Status |
+| # | Problem | Key idea |
 |---|---|---|
-| 1 | Buy and sell stock I | ⏳ |
-| 2 | Buy and sell stock II (unlimited) | ⏳ |
-| 3 | Buy and sell stock III (at most 2) | ⏳ |
-| 4 | Buy and sell stock IV (at most K) | ⏳ |
-| 5 | With cooldown | ⏳ |
-| 6 | With transaction fee | ⏳ |
+| 1 | [Buy and sell stock I](16.5-stocks/01-stock-i/) | track the minimum so far |
+| 2 | [Buy and sell stock II (unlimited)](16.5-stocks/02-stock-ii/) | state (i, canBuy) |
+| 3 | [Buy and sell stock III (at most 2)](16.5-stocks/03-stock-iii/) | state (i, canBuy, transactions left) |
+| 4 | [Buy and sell stock IV (at most K)](16.5-stocks/04-stock-iv/) | same with K |
+| 5 | [With cooldown](16.5-stocks/05-stock-cooldown/) | after selling jump to i + 2 |
+| 6 | [With transaction fee](16.5-stocks/06-stock-fee/) | pay the fee when selling |
 
 ### 16.6 Longest increasing subsequence
 | # | Problem | Status |
