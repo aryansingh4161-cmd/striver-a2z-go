@@ -1,6 +1,6 @@
 # Step 16: Dynamic Programming
 
-> Status: theory ready, problems coming ⏳
+> Status: theory, 16.1 and 16.2 done (12 problems); more coming ⏳
 
 ## What DP is
 Recursion where the **same subproblems repeat**, so you **store answers and reuse them**.
@@ -56,24 +56,24 @@ func waysOpt(n int) int {
 ## Problems
 
 ### 16.1 1D DP
-| # | Problem | Status |
+| # | Problem | Key idea |
 |---|---|---|
-| 1 | Climbing stairs | ⏳ |
-| 2 | Frog jump | ⏳ |
-| 3 | Frog jump with K distance | ⏳ |
-| 4 | Maximum sum of non-adjacent elements | ⏳ |
-| 5 | House robber II | ⏳ |
+| 1 | [Climbing stairs](16.1-1d-dp/01-climbing-stairs/) | f(n) = f(n−1) + f(n−2) |
+| 2 | [Frog jump](16.1-1d-dp/02-frog-jump/) | min of the two previous stones |
+| 3 | [Frog jump with K distance](16.1-1d-dp/03-frog-jump-k/) | min over the k previous stones |
+| 4 | [Maximum sum of non-adjacent elements](16.1-1d-dp/04-max-sum-non-adjacent/) | pick (i−2) or skip (i−1) |
+| 5 | [House robber II](16.1-1d-dp/05-house-robber-ii/) | skip first or skip last |
 
 ### 16.2 2D / 3D DP and grids
-| # | Problem | Status |
+| # | Problem | Key idea |
 |---|---|---|
-| 1 | Ninja's training | ⏳ |
-| 2 | Grid unique paths | ⏳ |
-| 3 | Unique paths II (obstacles) | ⏳ |
-| 4 | Minimum path sum | ⏳ |
-| 5 | Triangle | ⏳ |
-| 6 | Minimum / maximum falling path sum | ⏳ |
-| 7 | Cherry pickup II (3D DP) | ⏳ |
+| 1 | [Ninja's training](16.2-grids/01-ninja-training/) | state (day, last activity) |
+| 2 | [Grid unique paths](16.2-grids/02-unique-paths/) | up + left; or C(m+n−2, m−1) |
+| 3 | [Unique paths II (obstacles)](16.2-grids/03-unique-paths-ii/) | blocked cell = 0 ways |
+| 4 | [Minimum path sum](16.2-grids/04-minimum-path-sum/) | cell + min(up, left) |
+| 5 | [Triangle](16.2-grids/05-triangle/) | recurse from the top, fill from the bottom |
+| 6 | [Minimum / maximum falling path sum](16.2-grids/06-falling-path-sum/) | 3 parents per cell, free start and end |
+| 7 | [Cherry pickup II (3D DP)](16.2-grids/07-cherry-pickup-ii/) | state (row, colA, colB), 9 moves |
 
 ### 16.3 Subsequences
 | # | Problem | Status |

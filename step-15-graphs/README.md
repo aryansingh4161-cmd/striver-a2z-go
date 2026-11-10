@@ -1,6 +1,6 @@
 # Step 15: Graphs
 
-> Status: ✅ theory and all 54 problems done
+> Status: ✅ theory, 4 learning topics and all 43 problems done
 
 ## Words to know
 - **Vertex (node)** and **edge** (connection).
